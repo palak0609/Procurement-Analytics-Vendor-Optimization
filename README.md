@@ -14,10 +14,8 @@ _Analyzing vendor efficiency and profitability to support strategic purchasing a
 - <a href="#data-cleaning--preparation">Data Cleaning & Preparation</a>
 - <a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a>
 - <a href="#research-questions--key-findings">Research Questions & Key Findings</a>
-- <a href="#dashboard">Dashboard</a>
 - <a href="#how-to-run-this-project">How to Run This Project</a>
-- <a href="#final-recommendations">Final Recommendations</a>
-- <a href="#author--contact">Author & Contact</a>
+- <a href="#Future-enhancements">Future enhancements</a>
 
 ---
 <h2><a class="anchor" id="overview"></a>Overview</h2>
@@ -37,7 +35,6 @@ Effective inventory and sales management are critical in the retail sector. This
 ---
 <h2><a class="anchor" id="dataset"></a>Dataset</h2>
 
-- Multiple CSV files located in `/data/` folder (sales, vendors, inventory)
 - Summary table created from ingested data and used for analysis
 
 ---
@@ -46,7 +43,6 @@ Effective inventory and sales management are critical in the retail sector. This
 
 - SQL (Common Table Expressions, Joins, Filtering)
 - Python (Pandas, Matplotlib, Seaborn, SciPy)
-- Power BI (Interactive Visualizations)
 - GitHub
 
 ---
@@ -67,13 +63,11 @@ vendor-performance-analysis/
 ├── scripts/                    # Python scripts for ingestion and processing
 │   ├── ingestion_db.py
 │   └── get_vendor_summary.py
-│
-├── dashboard/                  # Power BI dashboard file
-│   └── vendor_performance_dashboard.pbix
+
 ```
 
 ---
-<h2><a class="anchor" id="data-cleaning--preparation"></a>Data Cleaning & Preparation</h2>
+<h2><a class="anchor" id="data-cleaning--preparation"></a>Data Cleaning</h2>
 
 - Removed transactions with:
   - Gross Profit ≤ 0
@@ -102,7 +96,7 @@ vendor-performance-analysis/
 ---
 <h2><a class="anchor" id="research-questions--key-findings"></a>Research Questions & Key Findings</h2>
 
-1. **Brands for Promotions**: 198 brands with low sales but high profit margins
+1. **Brands for Promotions**: 198 brands with low sales but high-profit margins
 2. **Top Vendors**: Top 10 vendors = 65.69% of purchases → risk of over-reliance
 3. **Bulk Purchasing Impact**: 72% cost savings per unit in large orders
 4. **Inventory Turnover**: $2.71M worth of unsold inventory
@@ -112,24 +106,14 @@ vendor-performance-analysis/
 6. **Hypothesis Testing**: Statistically significant difference in profit margins → distinct vendor strategies
 
 ---
-<h2><a class="anchor" id="dashboard"></a>Dashboard</h2>
 
-- Power BI Dashboard shows:
-  - Vendor-wise Sales and Margins
-  - Inventory Turnover
-  - Bulk Purchase Savings
-  - Performance Heatmaps
-
-![Vendor Performance Dashboard](images/dashboard.png)
-
----
 <h2><a class="anchor" id="how-to-run-this-project"></a>How to Run This Project</h2>
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/vendor-performance-analysis.git
 ```
-3. Load the CSVs and ingest into database:
+3. Load the CSVs and ingest into the database:
 ```bash
 python scripts/ingestion_db.py
 ```
@@ -138,13 +122,11 @@ python scripts/ingestion_db.py
 python scripts/get_vendor_summary.py
 ```
 5. Open and run notebooks:
-   - `notebooks/exploratory_data_analysis.ipynb`
-   - `notebooks/vendor_performance_analysis.ipynb`
-6. Open Power BI Dashboard:
-   - `dashboard/vendor_performance_dashboard.pbix`
+   - `notebook/exploratory_data_analysis.ipynb`
+   - `notebook/vendor_performance_analysis.ipynb`
 
 ---
-<h2><a class="anchor" id="final-recommendations"></a>Final Recommendations</h2>
+<h2><a class="anchor" id="Future-enhancements"></a>Future enhancements</h2>
 
 - Diversify vendor base to reduce risk
 - Optimize bulk order strategies
@@ -152,11 +134,3 @@ python scripts/get_vendor_summary.py
 - Clear unsold inventory strategically
 - Improve marketing for underperforming vendors
 
----
-<h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>
-
-**Ayushi Mishra**  
-Data Analyst  
-📧 Email: techclasses0810@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/ayushi-mishra-30813b174/)  
-🔗 [Portfolio](https://www.youtube.com/@techclasses0810/)
