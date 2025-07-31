@@ -1,3 +1,7 @@
+# this is the script to ingest the data into the database 
+# we will use sqlalchemy to create the connection to the database
+# the data is for the entire year 2024
+
 import pandas as pd
 import os
 from sqlalchemy import create_engine
