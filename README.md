@@ -14,10 +14,7 @@ _Analyzing vendor efficiency and profitability to support strategic purchasing a
 - <a href="#data-cleaning--preparation">Data Cleaning & Preparation</a>
 - <a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a>
 - <a href="#research-questions--key-findings">Research Questions & Key Findings</a>
-- <a href="#dashboard">Dashboard</a>
 - <a href="#how-to-run-this-project">How to Run This Project</a>
-- <a href="#final-recommendations">Final Recommendations</a>
-- <a href="#author--contact">Author & Contact</a>
 
 ---
 <h2><a class="anchor" id="overview"></a>Overview</h2>
@@ -37,7 +34,7 @@ Effective inventory and sales management are critical in the retail sector. This
 ---
 <h2><a class="anchor" id="dataset"></a>Dataset</h2>
 
-- Multiple CSV files located in `/data/` folder (sales, vendors, inventory)
+- Multiple CSV files located in `/data/data` folder (sales, vendors, inventory)
 - Summary table created from ingested data and used for analysis
 
 ---
@@ -64,12 +61,9 @@ vendor-performance-analysis/
 │   ├── exploratory_data_analysis.ipynb
 │   ├── vendor_performance_analysis.ipynb
 │
-├── scripts/                    # Python scripts for ingestion and processing
+├── src/                    # Python scripts for ingestion and processing
 │   ├── ingestion_db.py
 │   └── get_vendor_summary.py
-│
-├── dashboard/                  # Power BI dashboard file
-│   └── vendor_performance_dashboard.pbix
 ```
 
 ---
@@ -112,22 +106,11 @@ vendor-performance-analysis/
 6. **Hypothesis Testing**: Statistically significant difference in profit margins → distinct vendor strategies
 
 ---
-<h2><a class="anchor" id="dashboard"></a>Dashboard</h2>
-
-- Power BI Dashboard shows:
-  - Vendor-wise Sales and Margins
-  - Inventory Turnover
-  - Bulk Purchase Savings
-  - Performance Heatmaps
-
-![Vendor Performance Dashboard](images/dashboard.png)
-
----
 <h2><a class="anchor" id="how-to-run-this-project"></a>How to Run This Project</h2>
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/vendor-performance-analysis.git
+git clone https://github.com/yourusername/Procurement-Analytics-Vendor-Optimization.git
 ```
 3. Load the CSVs and ingest into database:
 ```bash
@@ -138,25 +121,5 @@ python scripts/ingestion_db.py
 python scripts/get_vendor_summary.py
 ```
 5. Open and run notebooks:
-   - `notebooks/exploratory_data_analysis.ipynb`
+   - `notebooks/EDA.ipynb`
    - `notebooks/vendor_performance_analysis.ipynb`
-6. Open Power BI Dashboard:
-   - `dashboard/vendor_performance_dashboard.pbix`
-
----
-<h2><a class="anchor" id="final-recommendations"></a>Final Recommendations</h2>
-
-- Diversify vendor base to reduce risk
-- Optimize bulk order strategies
-- Reprice slow-moving, high-margin brands
-- Clear unsold inventory strategically
-- Improve marketing for underperforming vendors
-
----
-<h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>
-
-**Ayushi Mishra**  
-Data Analyst  
-📧 Email: techclasses0810@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/ayushi-mishra-30813b174/)  
-🔗 [Portfolio](https://www.youtube.com/@techclasses0810/)
