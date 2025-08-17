@@ -43,7 +43,6 @@ Effective inventory and sales management are critical in the retail sector. This
 
 - SQL (Common Table Expressions, Joins, Filtering)
 - Python (Pandas, Matplotlib, Seaborn, SciPy)
-- Power BI (Interactive Visualizations)
 - GitHub
 
 ---
@@ -67,7 +66,7 @@ vendor-performance-analysis/
 ```
 
 ---
-<h2><a class="anchor" id="data-cleaning--preparation"></a>Data Cleaning & Preparation</h2>
+<h2><a class="anchor" id="data-cleaning--preparation"></a>Data Cleaning</h2>
 
 - Removed transactions with:
   - Gross Profit ≤ 0
@@ -96,7 +95,7 @@ vendor-performance-analysis/
 ---
 <h2><a class="anchor" id="research-questions--key-findings"></a>Research Questions & Key Findings</h2>
 
-1. **Brands for Promotions**: 198 brands with low sales but high profit margins
+1. **Brands for Promotions**: 198 brands with low sales but high-profit margins
 2. **Top Vendors**: Top 10 vendors = 65.69% of purchases → risk of over-reliance
 3. **Bulk Purchasing Impact**: 72% cost savings per unit in large orders
 4. **Inventory Turnover**: $2.71M worth of unsold inventory
@@ -112,7 +111,7 @@ vendor-performance-analysis/
 ```bash
 git clone https://github.com/yourusername/Procurement-Analytics-Vendor-Optimization.git
 ```
-3. Load the CSVs and ingest into database:
+3. Load the CSVs and ingest into the database:
 ```bash
 python scripts/ingestion_db.py
 ```
