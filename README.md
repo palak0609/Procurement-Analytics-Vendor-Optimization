@@ -109,7 +109,7 @@ vendor-performance-analysis/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Procurement-Analytics-Vendor-Optimization.git
+git clone https://github.com/palak0609/Procurement-Analytics-Vendor-Optimization.git
 ```
 3. Load the CSVs and ingest into the database:
 ```bash
